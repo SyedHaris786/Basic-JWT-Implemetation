@@ -3,8 +3,6 @@ const jwt = require('jsonwebtoken')
 const CustomAPIError = require('../errors/custom-error')
 
 
-
-
 const login = async (req,res) => {
 
 const {username,password} = req.body 
@@ -21,9 +19,7 @@ const {username,password} = req.body
 }
 
 
-
-
- const dashboard = async (req,res) =>{
+const dashboard = async (req,res) =>{
 
     const authHeader = req.headers.authorization;
 
